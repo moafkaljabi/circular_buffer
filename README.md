@@ -5,7 +5,7 @@ This project implements an efficient circular buffer system for UART communicati
 ## Features
 
 - Circular buffer implementation for UART RX and TX
-- Support for two UART ports (e.g., USART1 and USART2)
+- Support for two UART ports (e.g., USART0 and USART1)
 - Non-blocking transmit and receive
 - Compatible with STM32CubeIDE and HAL drivers
 - Easily portable across STM32F4 series
@@ -13,7 +13,7 @@ This project implements an efficient circular buffer system for UART communicati
 ## Target Hardware
 
 - STM32F4 Nucleo Board (e.g., Nucleo-F411RE or similar)
-- UART1 and UART2 pins connected for debugging or communication
+- UART0 and UART1 pins connected for debugging or communication
 
 ## Directory Structure
 
@@ -23,7 +23,7 @@ Core/ ├── Inc/ │ └── circular_buffer.h └── Src/ └── ci
 ## Getting Started
 
 1. Open the project with **STM32CubeIDE**.
-2. Ensure your `.ioc` configuration enables two UARTs (e.g., USART1 and USART2) with appropriate baud rates.
+2. Ensure your `.ioc` configuration enables two UARTs (e.g., USART0 and USART1) with appropriate baud rates.
 3. Build and flash the project to your Nucleo board.
 4. Connect UART pins to a serial terminal or another device for testing.
 
