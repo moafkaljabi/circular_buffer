@@ -78,22 +78,55 @@ void init_circular_buffer()
 
 	// Initialize interrupts
 
+	USART1->CR1 |= CR1_RXNEIE;
+	USART2->CR1 |= CR1_RXNEIE;
 
 }
 
 
 
 
-/*
- *
- * Methods
- *
- * */
+//--------- Methods ----------//
 
 
 int8_t find_str(char* sub, char* main)
 {
+	int length, i,j;
 
+	for(l=0; sub[l] != '\0'; l++){}
+
+	for(i=0, j=0; main[i] != '\0' && sub[j]!='\0'; i++)
+	{
+		if(main[i]  == sub[j])
+		{
+			j++;
+		}
+		else
+		{
+			j=0;
+		}
+	}
+
+	if(j == l)
+	{
+		return 1;
+	}
+	else
+	{
+		return -1;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
