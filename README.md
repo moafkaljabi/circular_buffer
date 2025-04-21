@@ -15,9 +15,7 @@ This project implements an efficient circular buffer system for UART communicati
 - STM32F4 Nucleo Board (e.g., Nucleo-F411RE or similar)
 - UART0 and UART1 pins connected for debugging or communication
 
-## Directory Structure
 
-Core/ ├── Inc/ │ └── circular_buffer.h └── Src/ └── circular_buffer.c Drivers/ STM32F4xx_HAL_Driver/
 
 
 ## Getting Started
